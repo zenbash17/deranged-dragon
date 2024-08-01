@@ -1,0 +1,285 @@
+/* Base styles */
+body {
+  background-color: white;
+}
+
+* {
+  font-family: 'Shippori Antique', sans-serif;
+  line-height: 24px;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* Typography */
+h1 {
+  font-size: 3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  line-height: 45px;
+}
+
+p, .h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1.6;
+}
+
+/* Navigation */
+.navbar-toggler:focus {
+  outline: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.def-container {
+  max-width: 1350px;
+}
+
+.logo {
+  max-height: 65px;
+  padding: 5px 0;
+}
+
+.nav-route {
+  color: #1f488b;
+  display: block;
+}
+
+.nav-route:hover {
+  color: teal;
+}
+
+.nuxt-link-exact-active {
+  font-weight: 700;
+}
+
+.nav-route.nuxt-link-exact-active {
+  color: Teal;
+}
+
+/* Hero section */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.hero-img {
+  height: 85vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section-title {
+  color: Teal;
+}
+
+.post-hero-img {
+  height: 60vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.post-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20%;
+  padding: 0 5vw;
+  z-index: 2;
+}
+
+/* Testimonial section */
+.testimonial-wrapper::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  font-size: 65px;
+  color: #043076;
+  text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+
+@media only screen and (max-width: 1366px) {
+  .testimonial-wrapper::before {
+    left: 10px;
+  }
+}
+
+.testimonial-img {
+  height: 410px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.testimonial-text {
+  position: absolute;
+  bottom: 4%;
+  padding: 20px 30px;
+}
+
+/* Post styles */
+.post-container:hover .post-img {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.post-img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.post-title {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  right: 15px;
+  bottom: 0;
+  padding: 130px 15px 0;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.17);
+  border-radius: 0.25rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 35px;
+}
+
+.carousel-caption {
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Chart styles */
+.chart-container {
+  width: 100%;
+}
+
+/* Footer styles */
+footer {
+  background: #1f488b;
+  display: flex;
+}
+
+.footer-social {
+  color: #fff;
+}
+
+.footer-social:hover {
+  color: #f1f1f1;
+}
+
+.chart-button {
+  color: #212529;
+  background-color: transparent;
+  border: 1px solid #ff8e17;
+  border-radius: 50px;
+  padding: 5px 20px;
+  margin: 0 10px 10px;
+}
+
+.site-section {
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .chart-button {
+    max-width: 20%;
+    margin: 0 0.5rem 0.8rem;
+    padding: 5px 10px;
+  }
+}
+
+.chart-button.active {
+  background: #ff8e17;
+  color: #fff;
+}
+
+.chart-button:focus {
+  box-shadow: none;
+}
+
+.carousel-indicators li {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+/* Testimonial slide */
+.testim__slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.48);
+  z-index: 1;
+  border-radius: 0.25rem;
+}
+
+.testim__slide .carousel-caption {
+  left: 20px;
+  right: 20px;
+}
+
+.testim__text {
+  font-size: large;
+}
+
+/* Main content styles */
+.main-content p,
+.main-content ul {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #373737;
+}
+
+.main-content a {
+  color: #ff8e17;
+  font-style: italic;
+}
+
+/* Chart button container */
+.button-container {
+  display: flex;
+  overflow-x: auto;
+}
+
+/* Article styles */
+.article-title,
+.main-content {
+  word-wrap: break-word;
+}
+
+/* Embed responsive */
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
