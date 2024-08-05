@@ -188,7 +188,7 @@ export default {
 
 .chart-button:hover,
 .chart-button.active {
-  background-color: #008080;
+  background-color: #000000;
   color: #fff;
   border-color: #008080;
 }
