@@ -46,7 +46,7 @@
               and man-made disasters.
             </p>
             <p>
-              Notable trends include [insert specific trend]. These statistics
+             These statistics
               highlight the importance of disaster preparedness and response
               strategies in mitigating the impact of catastrophic events on
               human life.
